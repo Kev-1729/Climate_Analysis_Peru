@@ -1,8 +1,17 @@
-# Extracción y visualización de los climas del Perú mediante WebScraping
-#### Video Demo:  <URL https://www.youtube.com/watch?v=5MPpUO0e-ds&ab_channel=KevinJonathanT.A.>
-#### Description: Esta software se encargará de extraer y analizar información climática específica de un departamente y region del Perú mediante el uso de web scraping. Utilizará la biblioteca BeautifulSoup y demas librerias para recopilar datos meteorológicos del Servicio Nacional de Meteorología e Hidrología del Perú (SENAMHI). El usuario podrá ingresar la ubicación de interés, y el software proporcionará una visualización de los datos climáticos de esa zona, facilitando una comprensión más clara y un análisis detallado del patrón climático en ese lugar, tambien el siftware permitira el guardado a lo largo del tiempo de esos datos, para futuras vizualizaciones.
-- Primero nuestra función Información(website): Realizará una solicitud HTTP al sitio web proporcionado como parámetro, el cual nos devolverá una respuesta.
-- En la función main(): Obtendrá realizara el web scraping para obtener los datos climáticos y lo almacenara en un archivo CSV. También solicitará un input donde se pasara la ubicación que queremos analizar.
-- Función actualizar(d, archivo): Actualiza el archivo CSV, evitando duplicados y asegurando que los datos estén actualizados y no vacíos.
-- Función grafico_lineplot(df, ubicacion): Generará un gráfico lineal que muestre la evolución de las temperaturas a lo largo de los días.
-- Función grafico_puntos(df, ubicacion): Generará un gráfico de dispersión que represente las temperaturas en función de los días en esa ubicacion.
+# **Extraction and Visualization of Peru's Climate Data using Web Scraping**  
+
+## **Description**  
+This software extracts and analyzes specific climate information for any department or region in Peru using web scraping. It utilizes the **BeautifulSoup** library, along with other tools, to collect meteorological data from the **National Meteorology and Hydrology Service of Peru (SENAMHI)**.  
+
+### **Main Features**  
+- **Real-Time Data Extraction**: Users can input a location of interest and obtain the corresponding climate data.  
+- **Data Storage**: The software saves collected data over time for future visualizations and analysis.  
+- **Automated Data Update**: It ensures that stored data remains up-to-date while avoiding duplicates.  
+- **Graphical Representation**: Includes visualizations for better interpretation of climate trends.  
+
+### **Main Functions**  
+- **`get_information(website)`**: Makes an HTTP request to the specified website and retrieves the response.  
+- **`main()`**: Performs web scraping to obtain climate data and stores it in a CSV file. It also prompts the user to enter a location for analysis.  
+- **`update_data(d, file)`**: Updates the CSV file, ensuring that the data remains accurate, up-to-date, and free of duplicates.  
+- **`line_plot_graph(df, location)`**: Generates a line plot to visualize temperature trends over time.  
+- **`scatter_plot_graph(df, location)`**: Creates a scatter plot representing temperature variations over time for a given location.  
