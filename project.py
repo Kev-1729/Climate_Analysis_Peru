@@ -96,7 +96,7 @@ def actualizar(d, archivo):
                         writer.writerow(row)
                         verificar.add((row["lugar"], row["dia"]))
 
-
+#Revisar esto o borrar
 def grafico_lineplot(df, ubicacion):
     sns.set(style="whitegrid")
     plt.figure(figsize=(10, 6))
